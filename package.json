@@ -1,0 +1,17 @@
+{
+  "name": "age-calculator-app",
+  "version": "1.0.0",
+  "description": "Junior Frontend Mentor Challenge \"Age Calculator App\"",
+  "default": "index.js",
+  "scripts": {
+    "start": "npx parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "author": "Gerald Esteban",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.11.0",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1"
+  }
+}

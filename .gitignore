@@ -1,0 +1,9 @@
+.parcel-cache
+.DS_Store
+design
+dist
+node_modules
+package-lock.json
+copy.js
+README-template.md
+style-guide.md

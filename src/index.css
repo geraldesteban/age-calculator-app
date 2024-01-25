@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #f0f0f0;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn__icon {
+  background-color: #854dff;
+}
+
+.btn__icon:active {
+  background-color: #141414;
+}
+
+.result__span {
+  color: #854dff;
+}
+
+.card__input::-webkit-outer-spin-button,
+.card__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.card__input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.card__input {
+  font-size: 1.5rem;
+}
+
+.card__input::placeholder {
+  margin-left: 2rem;
+}
+
+.card__container {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 10rem;
+}
