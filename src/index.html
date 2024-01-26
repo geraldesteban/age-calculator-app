@@ -1,73 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon-32x32.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./index.css" />
+    <script type="module" src="./controller.js" defer></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./favicon-32x32.png" type="image/x-icon" />
-  <link rel="stylesheet" href="./index.css" />
-  <script type="module" src="./controller.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Age Calculator App</title>
+  </head>
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
-  <title>Age Calculator App</title>
-</head>
-
-<body class="h-screen flex justify-center items-center">
-  <div class="card__container bg-white w-2/5 p-10 max-xl:w-full max-xl:mx-96 max-sm:w-80">
-    <div class="card__date">
-      <div class="card__day-month-year flex">
-        <div>
-          <label class="card__text day text-gray-500 tracking-wider" for="day">DAY</label>
-          <br />
-          <input
-            class="card__input day__error mt-3 mr-5 w-40 h-16 font-bold pl-3 border rounded-md outline-none max-2xl:w-32 max-2xl:h-10 max-2xl:mr-3 max-xl:w-28 max-sm:w-20 max-sm:text-xs"
-            type="number" id="day" placeholder="DD" required />
-          <p class="card__error error__day mt-3 italic opacity-0 text-red-500 max-sm:text-xs">
-            This field is required
-          </p>
-        </div>
-        <div>
-          <label class="card__text month text-gray-500 tracking-wider" for="month">MONTH</label>
-          <br />
-          <input
-            class="card__input month__error mt-3 mr-5 w-40 h-16 font-bold pl-3 border rounded-md outline-none max-2xl:w-32 max-2xl:h-10 max-2xl:mr-3 max-xl:w-28 max-sm:w-20 max-sm:text-xs"
-            type="number" id="month" placeholder="MM" required />
-          <p class="card__error error__month mt-3 italic opacity-0 text-red-500 max-sm:text-xs">
-            This field is required
-          </p>
-        </div>
-        <div>
-          <label class="card__text year text-gray-500 tracking-wider" for="year">YEAR</label>
-          <br />
-          <input
-            class="card__input year__error mt-3 w-40 h-16 font-bold pl-3 border rounded-md outline-none max-2xl:w-32 max-2xl:h-10 max-xl:w-28 max-sm:w-20 max-sm:text-xs"
-            type="number" id="year" placeholder="YYYY" required />
-          <p class="card__error error__year mt-3 italic opacity-0 text-red-500 max-sm:text-xs">
-            This field is required
-          </p>
+  <body class="h-screen flex justify-center items-center">
+    <div
+      class="card__container bg-white w-2/5 p-10 max-xl:w-full max-xl:mx-96 max-sm:w-80"
+    >
+      <div class="card__date">
+        <div class="card__day-month-year flex">
+          <div>
+            <label class="card__text day text-gray-500 tracking-wider" for="day"
+              >DAY</label
+            >
+            <br />
+            <input
+              class="card__input day__error mt-3 mr-5 w-40 h-16 font-bold pl-3 border rounded-md outline-none max-2xl:w-32 max-2xl:h-10 max-2xl:mr-3 max-xl:w-28 max-sm:w-20 max-sm:text-xs"
+              type="number"
+              id="day"
+              placeholder="DD"
+              required
+            />
+            <p
+              class="card__error error__day mt-3 italic opacity-0 text-red-500 max-sm:mt-1"
+            >
+              This field is required
+            </p>
+          </div>
+          <div>
+            <label
+              class="card__text month text-gray-500 tracking-wider"
+              for="month"
+              >MONTH</label
+            >
+            <br />
+            <input
+              class="card__input month__error mt-3 mr-5 w-40 h-16 font-bold pl-3 border rounded-md outline-none max-2xl:w-32 max-2xl:h-10 max-2xl:mr-3 max-xl:w-28 max-sm:w-20 max-sm:text-xs"
+              type="number"
+              id="month"
+              placeholder="MM"
+              required
+            />
+            <p
+              class="card__error error__month mt-3 italic opacity-0 text-red-500 max-sm:mt-1"
+            >
+              This field is required
+            </p>
+          </div>
+          <div>
+            <label
+              class="card__text year text-gray-500 tracking-wider"
+              for="year"
+              >YEAR</label
+            >
+            <br />
+            <input
+              class="card__input year__error mt-3 w-40 h-16 font-bold pl-3 border rounded-md outline-none max-2xl:w-32 max-2xl:h-10 max-xl:w-28 max-sm:w-20 max-sm:text-xs"
+              type="number"
+              id="year"
+              placeholder="YYYY"
+              required
+            />
+            <p
+              class="card__error error__year mt-3 italic opacity-0 text-red-500 max-sm:mt-1"
+            >
+              This field is required
+            </p>
+          </div>
         </div>
       </div>
+      <div
+        class="card__btn relative flex items-center max-sm:relative max-sm:mb-10 top-8"
+      >
+        <div class="card__line flex-1 border-t-2"></div>
+        <button type="submit" class="btn max-sm:absolute max-sm:left-24">
+          <img
+            class="btn__icon p-5 rounded-full max-xl:p-3 max-sm:p-2"
+            src="./icon-arrow.svg"
+            alt="icon-arrow"
+          />
+        </button>
+      </div>
+      <div class="result max-sm:mt-20">
+        <h2
+          class="result__text text-6xl font-bold italic max-xl:text-5xl max-sm:text-4xl"
+        >
+          <span class="result__years result__span">- -</span> years
+        </h2>
+        <h2
+          class="result__text text-6xl font-bold italic max-xl:text-5xl max-sm:text-4xl"
+        >
+          <span class="result__months result__span">- -</span> months
+        </h2>
+        <h2
+          class="result__text text-6xl font-bold italic max-xl:text-5xl max-sm:text-4xl"
+        >
+          <span class="result__days result__span">- -</span> days
+        </h2>
+      </div>
     </div>
-    <div class="card__btn relative flex items-center max-sm:relative max-sm:mb-10">
-      <div class="card__line flex-1 border-t-2"></div>
-      <button type="submit" class="btn max-sm:absolute max-sm:left-24">
-        <img class="btn__icon p-5 rounded-full max-xl:p-3 max-sm:p-2" src="./icon-arrow.svg" alt="icon-arrow" />
-      </button>
-    </div>
-    <div class="result">
-      <h2 class="result__text text-6xl font-bold italic max-xl:text-5xl max-sm:text-4xl">
-        <span class="result__years result__span">- -</span> years
-      </h2>
-      <h2 class="result__text text-6xl font-bold italic max-xl:text-5xl max-sm:text-4xl">
-        <span class="result__months result__span">- -</span> months
-      </h2>
-      <h2 class="result__text text-6xl font-bold italic max-xl:text-5xl max-sm:text-4xl">
-        <span class="result__days result__span">- -</span> days
-      </h2>
-    </div>
-  </div>
-</body>
-
+  </body>
 </html>
