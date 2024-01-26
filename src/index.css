@@ -43,3 +43,9 @@ body {
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 10rem;
 }
+
+@media only screen and (max-width: 640px) {
+  .card__error {
+    font-size: 8px;
+  }
+}
